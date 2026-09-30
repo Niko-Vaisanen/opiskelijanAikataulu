@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Opiskelijan Aikataulu: Päivä</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="logo.png" />
+	</head>
+	<body>
+		<header>
+			<div class="header-inner">
+				<img src="logo.png" alt="Palvelun logo" class="logo" />
+				<h1 class="header-title">Opiskelijan Aikataulu</h1>
+			</div>
+		</header>
+
+		<main>
+			<nav class="view-tabs-container">
+				<!-- Näkymä valitsin -->
+				<a
+					href="paivaNakyma.html"
+					class="view-tab-label view-tab-label-selected"
+					><span class="paiva-btn">Päivä</span></a
+				>
+				<a href="viikkoNakyma.html" class="view-tab-label"
+					><span class="week-btn">Viikko</span></a
+				>
+			</nav>
+
+			<!-- Viikkovalitsin -->
+			<div class="card-base week-nav-card">
+				<button type="button" class="nav-arrow-btn">
+					<span class="material-symbols-outlined">chevron_left</span>
+				</button>
+				<div class="week-nav-center">
+					<span class="week-title">Viikko 43</span>
+					<span class="week-dates">21.-27. lokakuuta</span>
+				</div>
+				<button type="button" class="nav-arrow-btn">
+					<span class="material-symbols-outlined">chevron_right</span>
+				</button>
+			</div>
+
+			<!-- Päivävalitsin -->
+			<div class="week-strip">
+				<div class="day-pill">
+					<span class="day-name">Ma</span>
+					<span class="day-num">21</span>
+				</div>
+				<div class="day-pill today">
+					<span class="day-name">Ti</span>
+					<span class="day-num">22</span>
+				</div>
+				<div class="day-pill">
+					<span class="day-name">Ke</span>
+					<span class="day-num">23</span>
+				</div>
+				<div class="day-pill">
+					<span class="day-name">To</span>
+					<span class="day-num">24</span>
+				</div>
+				<div class="day-pill">
+					<span class="day-name">Pe</span>
+					<span class="day-num">25</span>
+				</div>
+				<div class="day-pill">
+					<span class="day-name">La</span>
+					<span class="day-num">26</span>
+				</div>
+				<div class="day-pill">
+					<span class="day-name">Su</span>
+					<span class="day-num">27</span>
+				</div>
+			</div>
+
+			<!-- Erääntyvät palautukset -->
+			<section>
+				<div class="section-header">
+					<div class="section-title-wrap">
+						<span
+							class="material-symbols-outlined"
+							style="color: var(--color-amber)"
+							>warning</span
+						>
+						<h2 class="section-title">Erääntyvät Palautukset</h2>
+					</div>
+					<span class="section-notes">2 Tänään</span>
+				</div>
+
+				<!-- Deadline kortit -->
+				<a href="kurssiCS201.html" class="card-base deadline-card">
+					<div class="card-top-row">
+						<div>
+							<div class="course">
+								<span class="course-tag">CS201</span>
+								<span class="course-subname">Ohjelmointi 2</span>
+							</div>
+							<h3 class="card-title">Viikkoharjoitus 6</h3>
+						</div>
+						<div class="card-time">
+							<span class="amber-dot"></span>
+							<span>5.11. 23:59</span>
+						</div>
+					</div>
+					<div class="card-footer">
+						<span class="card-subtitle">
+							Git-repositorion palautus järjestelmään - Tehtäväosiot A & B
+						</span>
+					</div>
+				</a>
+
+				<a href="kurssiCS201.html" class="card-base deadline-card">
+					<div class="card-top-row">
+						<div>
+							<div class="course">
+								<span class="course-tag">CS201</span>
+								<span class="course-subname">Ohjelmointi 2</span>
+							</div>
+							<h3 class="card-title">Viikkoharjoitus 6</h3>
+						</div>
+						<div class="card-time">
+							<span class="amber-dot"></span>
+							<span>5.11. 23:59</span>
+						</div>
+					</div>
+					<div class="card-footer">
+						<span class="card-subtitle">
+							Git-repositorion palautus järjestelmään - Tehtäväosiot A & B
+						</span>
+					</div>
+				</a>
+			</section>
+
+			<!-- Päivän ohjelma -->
+			<section>
+				<div class="section-header">
+					<div class="section-title-wrap">
+						<span
+							class="material-symbols-outlined"
+							style="color: var(--color-primary)"
+							>schedule</span
+						>
+						<h2 class="section-title">Päivän ohjelma</h2>
+					</div>
+					<span class="section-notes">3 luentoa/tapaamista</span>
+				</div>
+
+				<!-- Event kortit -->
+
+				<a href="kurssiCS201.html" class="card-base event-card">
+					<div class="card-top-row">
+						<div class="course">
+							<span class="course-tag">CS201</span>
+							<span class="course-subname">Ohjelmointi 2</span>
+						</div>
+						<div class="card-time">
+							<span class="blue-dot"></span>
+							<span>10:30 - 12:00</span>
+						</div>
+					</div>
+
+					<h3 class="card-title">Tietokannat - Harjoitusryhmä 3</h3>
+					<p class="card-subtitle">
+						Relaatiotietokannat & harjoitustyön katselmointi
+					</p>
+
+					<div class="card-footer">
+						<span
+							class="material-symbols-outlined"
+							style="font-size: 15px; color: var(--color-primary)"
+							>computer</span
+						>
+						<span>Mikroluokka C204</span>
+					</div>
+				</a>
+
+				<a href="kurssiCS201.html" class="card-base event-card">
+					<div class="card-top-row">
+						<div class="course">
+							<span class="course-tag">CS201</span>
+							<span class="course-subname">Ohjelmointi 2</span>
+						</div>
+						<div class="card-time">
+							<span class="blue-dot"></span>
+							<span>12:15 - 14:30</span>
+						</div>
+					</div>
+
+					<h3 class="card-title">Tietokannat - Harjoitusryhmä 3</h3>
+					<p class="card-subtitle">
+						Relaatiotietokannat & harjoitustyön katselmointi
+					</p>
+
+					<div class="card-footer">
+						<span
+							class="material-symbols-outlined"
+							style="font-size: 15px; color: var(--color-primary)"
+							>computer</span
+						>
+						<span>Mikroluokka C204</span>
+					</div>
+				</a>
+
+				<a href="kurssiCS201.html" class="card-base event-card">
+					<div class="card-top-row">
+						<div class="course">
+							<span class="course-tag">CS201</span>
+							<span class="course-subname">Ohjelmointi 2</span>
+						</div>
+						<div class="card-time">
+							<span class="blue-dot"></span>
+							<span>15:10 - 17:00</span>
+						</div>
+					</div>
+
+					<h3 class="card-title">Tietokannat - Harjoitusryhmä 3</h3>
+					<p class="card-subtitle">
+						Relaatiotietokannat & harjoitustyön katselmointi
+					</p>
+
+					<div class="card-footer">
+						<span
+							class="material-symbols-outlined"
+							style="font-size: 15px; color: var(--color-primary)"
+							>computer</span
+						>
+						<span>Mikroluokka C204</span>
+					</div>
+				</a>
+			</section>
+		</main>
+	</body>
+</html>

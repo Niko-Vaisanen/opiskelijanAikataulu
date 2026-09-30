@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Opiskelijan Aikataulu: Viikko</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="logo.png" />
+	</head>
+	<body>
+		<header>
+			<div class="header-inner">
+				<img src="logo.png" alt="Palvelun logo" class="logo" />
+				<h1 class="header-title">Opiskelijan Aikataulu</h1>
+			</div>
+		</header>
+
+		<main>
+			<nav class="view-tabs-container">
+				<!-- Näkymä valitsin -->
+				<a href="paivaNakyma.html" class="view-tab-label"
+					><span class="paiva-btn">Päivä</span></a
+				>
+				<a
+					href="viikkoNakyma.html"
+					class="view-tab-label view-tab-label-selected"
+					><span class="week-btn">Viikko</span></a
+				>
+			</nav>
+
+			<!-- Viikkovalitsin -->
+			<div class="card-base week-nav-card">
+				<button type="button" class="nav-arrow-btn">
+					<span class="material-symbols-outlined">chevron_left</span>
+				</button>
+				<div class="week-nav-center">
+					<span class="week-title">Viikko 43</span>
+					<span class="week-dates">21.-27. lokakuuta</span>
+				</div>
+				<button type="button" class="nav-arrow-btn">
+					<span class="material-symbols-outlined">chevron_right</span>
+				</button>
+			</div>
+
+			<!-- Maanantai -->
+			<section>
+				<div class="section-header week-section-header">
+					<div class="section-title-wrap">
+						<h2 class="week-section-title">Maanantai</h2>
+						<p class="week-section-date">21.10</p>
+					</div>
+					<span class="section-notes">2 Merkintää</span>
+				</div>
+
+				<!-- Päivän kortit -->
+				<a href="kurssiCS201.html" class="card-base deadline-card">
+					<div class="card-top-row">
+						<div>
+							<div class="course">
+								<span class="course-tag">CS201</span>
+								<span class="course-subname">Ohjelmointi 2</span>
+							</div>
+							<h3 class="card-title">Viikkoharjoitus 6</h3>
+						</div>
+						<div class="card-time">
+							<span class="amber-dot"></span>
+							<span>5.11. 23:59</span>
+						</div>
+					</div>
+					<div class="card-footer">
+						<span class="card-subtitle">
+							Git-repositorion palautus järjestelmään - Tehtäväosiot A & B
+						</span>
+					</div>
+				</a>
+
+				<a href="kurssiCS201.html   " class="card-base event-card">
+					<div class="card-top-row">
+						<div class="course">
+							<span class="course-tag">CS201</span>
+							<span class="course-subname">Ohjelmointi 2</span>
+						</div>
+						<div class="card-time">
+							<span class="blue-dot"></span>
+							<span>24.10. 12:15</span>
+						</div>
+					</div>
+
+					<h3 class="card-title">Tietokannat - Harjoitusryhmä 3</h3>
+					<p class="card-subtitle">
+						Relaatiotietokannat & harjoitustyön katselmointi
+					</p>
+
+					<div class="card-footer">
+						<span
+							class="material-symbols-outlined"
+							style="font-size: 15px; color: var(--color-primary)"
+							>computer</span
+						>
+						<span>Mikroluokka C204</span>
+					</div>
+				</a>
+			</section>
+
+			<!-- Tiistai -->
+			<section>
+				<div class="section-header week-section-header">
+					<div class="section-title-wrap">
+						<h2 class="week-section-title">Tiistai</h2>
+						<p class="week-section-date">22.10</p>
+					</div>
+					<span class="section-notes">1 Merkintä</span>
+				</div>
+
+				<!-- Päivän kortit -->
+
+				<a href="kurssiCS201.html   " class="card-base event-card">
+					<div class="card-top-row">
+						<div class="course">
+							<span class="course-tag">CS201</span>
+							<span class="course-subname">Ohjelmointi 2</span>
+						</div>
+						<div class="card-time">
+							<span class="blue-dot"></span>
+							<span>24.10. 12:15</span>
+						</div>
+					</div>
+
+					<h3 class="card-title">Tietokannat - Harjoitusryhmä 3</h3>
+					<p class="card-subtitle">
+						Relaatiotietokannat & harjoitustyön katselmointi
+					</p>
+
+					<div class="card-footer">
+						<span
+							class="material-symbols-outlined"
+							style="font-size: 15px; color: var(--color-primary)"
+							>computer</span
+						>
+						<span>Mikroluokka C204</span>
+					</div>
+				</a>
+			</section>
+
+			<!--Keskiviikko -->
+			<section>
+				<div class="section-header week-section-header">
+					<div class="section-title-wrap">
+						<h2 class="week-section-title">Keskiviikko</h2>
+						<p class="week-section-date">23.10</p>
+					</div>
+					<span class="section-notes">3 Merkintää</span>
+				</div>
+
+				<!-- Päivän kortit -->
+				<a href="kurssiCS201.html" class="card-base deadline-card">
+					<div class="card-top-row">
+						<div>
+							<div class="course">
+								<span class="course-tag">CS201</span>
+								<span class="course-subname">Ohjelmointi 2</span>
+							</div>
+							<h3 class="card-title">Viikkoharjoitus 6</h3>
+						</div>
+						<div class="card-time">
+							<span class="amber-dot"></span>
+							<span>5.11. 23:59</span>
+						</div>
+					</div>
+					<div class="card-footer">
+						<span class="card-subtitle">
+							Git-repositorion palautus järjestelmään - Tehtäväosiot A & B
+						</span>
+					</div>
+				</a>
+
+				<a href="kurssiCS201.html   " class="card-base event-card">
+					<div class="card-top-row">
+						<div class="course">
+							<span class="course-tag">CS201</span>
+							<span class="course-subname">Ohjelmointi 2</span>
+						</div>
+						<div class="card-time">
+							<span class="blue-dot"></span>
+							<span>24.10. 12:15</span>
+						</div>
+					</div>
+
+					<h3 class="card-title">Tietokannat - Harjoitusryhmä 3</h3>
+					<p class="card-subtitle">
+						Relaatiotietokannat & harjoitustyön katselmointi
+					</p>
+
+					<div class="card-footer">
+						<span
+							class="material-symbols-outlined"
+							style="font-size: 15px; color: var(--color-primary)"
+							>computer</span
+						>
+						<span>Mikroluokka C204</span>
+					</div>
+				</a>
+
+				<a href="kurssiCS201.html   " class="card-base event-card">
+					<div class="card-top-row">
+						<div class="course">
+							<span class="course-tag">CS201</span>
+							<span class="course-subname">Ohjelmointi 2</span>
+						</div>
+						<div class="card-time">
+							<span class="blue-dot"></span>
+							<span>24.10. 12:15</span>
+						</div>
+					</div>
+
+					<h3 class="card-title">Tietokannat - Harjoitusryhmä 3</h3>
+					<p class="card-subtitle">
+						Relaatiotietokannat & harjoitustyön katselmointi
+					</p>
+
+					<div class="card-footer">
+						<span
+							class="material-symbols-outlined"
+							style="font-size: 15px; color: var(--color-primary)"
+							>computer</span
+						>
+						<span>Mikroluokka C204</span>
+					</div>
+				</a>
+			</section>
+
+			<!-- Torstai -->
+			<section>
+				<div class="section-header week-section-header">
+					<div class="section-title-wrap">
+						<h2 class="week-section-title">Torstai</h2>
+						<p class="week-section-date">24.10</p>
+					</div>
+					<span class="section-notes">2 Merkintää</span>
+				</div>
+
+				<!-- Päivän kortit -->
+
+				<a href="kurssiCS201.html   " class="card-base event-card">
+					<div class="card-top-row">
+						<div class="course">
+							<span class="course-tag">CS201</span>
+							<span class="course-subname">Ohjelmointi 2</span>
+						</div>
+						<div class="card-time">
+							<span class="blue-dot"></span>
+							<span>24.10. 12:15</span>
+						</div>
+					</div>
+
+					<h3 class="card-title">Tietokannat - Harjoitusryhmä 3</h3>
+					<p class="card-subtitle">
+						Relaatiotietokannat & harjoitustyön katselmointi
+					</p>
+
+					<div class="card-footer">
+						<span
+							class="material-symbols-outlined"
+							style="font-size: 15px; color: var(--color-primary)"
+							>computer</span
+						>
+						<span>Mikroluokka C204</span>
+					</div>
+				</a>
+
+				<a href="kurssiCS201.html   " class="card-base event-card">
+					<div class="card-top-row">
+						<div class="course">
+							<span class="course-tag">CS201</span>
+							<span class="course-subname">Ohjelmointi 2</span>
+						</div>
+						<div class="card-time">
+							<span class="blue-dot"></span>
+							<span>24.10. 12:15</span>
+						</div>
+					</div>
+
+					<h3 class="card-title">Tietokannat - Harjoitusryhmä 3</h3>
+					<p class="card-subtitle">
+						Relaatiotietokannat & harjoitustyön katselmointi
+					</p>
+
+					<div class="card-footer">
+						<span
+							class="material-symbols-outlined"
+							style="font-size: 15px; color: var(--color-primary)"
+							>computer</span
+						>
+						<span>Mikroluokka C204</span>
+					</div>
+				</a>
+			</section>
+
+			<!-- Perjantai -->
+			<section>
+				<div class="section-header week-section-header">
+					<div class="section-title-wrap">
+						<h2 class="week-section-title">Perjantai</h2>
+						<p class="week-section-date">25.10</p>
+					</div>
+					<span class="section-notes">1 Merkintä</span>
+				</div>
+
+				<!-- Päivän kortit -->
+
+				<a href="kurssiCS201.html   " class="card-base event-card">
+					<div class="card-top-row">
+						<div class="course">
+							<span class="course-tag">CS201</span>
+							<span class="course-subname">Ohjelmointi 2</span>
+						</div>
+						<div class="card-time">
+							<span class="blue-dot"></span>
+							<span>24.10. 12:15</span>
+						</div>
+					</div>
+
+					<h3 class="card-title">Tietokannat - Harjoitusryhmä 3</h3>
+					<p class="card-subtitle">
+						Relaatiotietokannat & harjoitustyön katselmointi
+					</p>
+
+					<div class="card-footer">
+						<span
+							class="material-symbols-outlined"
+							style="font-size: 15px; color: var(--color-primary)"
+							>computer</span
+						>
+						<span>Mikroluokka C204</span>
+					</div>
+				</a>
+			</section>
+
+			<!-- Lauantai -->
+			<section>
+				<div class="section-header week-section-header">
+					<div class="section-title-wrap">
+						<h2 class="week-section-title">Lauantai</h2>
+						<p class="week-section-date">26.10</p>
+					</div>
+					<span class="section-notes">Ei Merkintöjä</span>
+				</div>
+
+				<!-- Päivän kortit -->
+
+				<div class="empty-card">
+					<span
+						class="material-symbols-outlined"
+						style="color: var(--color-amber)"
+						>wb_sunny</span
+					>
+					<span>Ei Merkintöjä</span>
+				</div>
+			</section>
+
+			<!-- Sunnuntai -->
+			<section>
+				<div class="section-header week-section-header">
+					<div class="section-title-wrap">
+						<h2 class="week-section-title">Sunnuntai</h2>
+						<p class="week-section-date">27.10</p>
+					</div>
+					<span class="section-notes">Ei Merkintöjä</span>
+				</div>
+
+				<!-- Päivän kortit -->
+
+				<div class="empty-card">
+					<span
+						class="material-symbols-outlined"
+						style="color: var(--color-amber)"
+						>wb_sunny</span
+					>
+					<span>Ei Merkintöjä</span>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

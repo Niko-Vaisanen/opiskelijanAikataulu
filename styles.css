@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+	--color-primary: #0079c2;
+	--color-surface: #f7fafc;
+	--color-surface-white: #ffffff;
+	--color-surface-low: #f2f4f6;
+	--color-surface-high: #e6e8ea;
+	--color-amber: #d97706;
+
+	--font-family: "Inter", Arial, sans-serif;
+
+	--color-text-main: #000000;
+	--color-text-muted: #404751;
+	--color-text-secondary: #ffffff;
+
+	--radius-sm: 6px;
+	--radius-md: 10px;
+	--radius-lg: 14px;
+	--radius-full: 9999px;
+
+	--shadow-card: 0 2px 8px -2px rgba(0, 96, 155, 0.08);
+	--shadow-card-hover: 0 6px 16px -3px rgba(0, 96, 155, 0.12);
+
+	--border-card: 1px solid rgba(192, 199, 210, 0.35);
+}
+
+html {
+	font-family: var(--font-family);
+	background-color: var(--color-surface);
+	color: var(--color-text-main);
+	line-height: 1.5;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.material-symbols-outlined {
+	vertical-align: middle;
+}
+
+/* Kortit */
+
+.card-base {
+	background-color: var(--color-surface-white);
+	border: var(--border-card);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-card);
+}
+
+.card-base:hover {
+	box-shadow: var(--shadow-card-hover);
+}
+
+.card-top-row {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.course {
+	display: flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.course-tag {
+	font-size: 0.625rem;
+	font-weight: 700;
+	background-color: var(--color-surface-low);
+	color: var(--color-text-main);
+	padding: 0.125rem 0.4rem;
+	border-radius: var(--radius-sm);
+	border: var(--border-card);
+}
+
+.course-subname {
+	font-size: 0.75rem;
+	color: var(--color-text-muted);
+	font-weight: 550;
+}
+
+.card-time {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	padding: 0.2rem 0.55rem;
+	border-radius: var(--radius-full);
+	background-color: var(--color-surface);
+	border: var(--border-card);
+	font-size: 0.7rem;
+	font-weight: 700;
+	color: var(--color-text-main);
+	white-space: nowrap;
+}
+
+.card-title {
+	font-size: 0.9rem;
+	font-weight: 700;
+	margin: 0;
+	color: var(--color-text-main);
+}
+
+.card-subtitle {
+	margin: 0;
+	font-size: 0.75rem;
+	font-weight: 525;
+	color: var(--color-text-muted);
+}
+
+.card-footer {
+	display: flex;
+	align-items: center;
+	gap: 0.35rem;
+	padding-top: 0.125rem;
+	border-top: 2px solid var(--color-surface-high);
+	font-size: 0.75rem;
+	color: var(--color-text-main);
+	font-weight: 550;
+}
+
+/* Header */
+header {
+	position: sticky;
+	top: 0;
+	background-color: var(--color-surface);
+	border-bottom: var(--border-card);
+	padding: 0.5rem 0.5rem;
+	margin-bottom: 1rem;
+	z-index: 1;
+}
+
+.logo {
+	width: 3.75rem;
+	height: 3.75rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-title {
+	color: var(--color-primary);
+	font-size: 1.75rem;
+}
+
+.header-inner {
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+	margin-bottom: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+.backBtn {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.125rem;
+	color: var(--color-primary);
+}
+
+/* Näkymävalitsin */
+
+.view-tabs-container {
+	display: flex;
+	background-color: var(--color-surface-low);
+	padding: 0.25rem;
+	border-radius: var(--radius-md);
+	border: var(--border-card);
+	box-shadow: var(--shadow-card);
+	margin-bottom: 1rem;
+}
+
+.view-tab-label {
+	flex: 1;
+	text-align: center;
+	padding: 0.4rem 0.5rem;
+	color: var(--color-text-muted);
+	border-radius: var(--radius-sm);
+	transition: all 0.15s ease;
+	cursor: pointer;
+	display: block;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.view-tab-label-selected {
+	background-color: var(--color-surface-white);
+	color: var(--color-primary);
+}
+
+.view-tab-label:hover {
+	color: var(--color-text-main);
+	background-color: var(--color-surface-high);
+}
+
+/* Viikkonavigaattori */
+.week-nav-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.65rem;
+}
+
+.week-nav-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.week-title {
+	font-size: 0.875rem;
+	font-weight: 700;
+	color: var(--color-text-main);
+}
+
+.week-dates {
+	font-size: 0.75rem;
+	color: var(--color-text-muted);
+	font-weight: 500;
+}
+
+.nav-arrow-btn {
+	width: 2rem;
+	height: 2rem;
+	border-radius: var(--radius-sm);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--color-text-muted);
+	background: transparent;
+	border: none;
+}
+
+.nav-arrow-btn:hover {
+	background-color: var(--color-surface-high);
+	cursor: pointer;
+}
+
+/* Päivävalitsin */
+
+.week-strip {
+	display: grid;
+	grid-template-columns: repeat(7, minmax(0, 1fr));
+	gap: 0.375rem;
+	margin-bottom: 1.125rem;
+	margin-top: 1.125rem;
+}
+
+.day-pill {
+	padding: 0.5rem 0.2rem;
+	border-radius: var(--radius-md);
+	background-color: var(--color-surface-white);
+	border: var(--border-card);
+	box-shadow: var(--shadow-card);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.25rem;
+	text-align: center;
+}
+
+.day-pill:hover {
+	background-color: var(--color-surface-low);
+	cursor: pointer;
+}
+
+.day-name {
+	font-size: 0.7rem;
+	font-weight: 600;
+	color: var(--color-text-muted);
+}
+
+.day-num {
+	font-size: 0.875rem;
+	font-weight: 700;
+	color: var(--color-text-main);
+}
+
+.day-pill.today {
+	background-color: var(--color-primary);
+}
+
+.day-pill.today .day-name {
+	color: var(--color-text-secondary);
+}
+
+.day-pill.today .day-num {
+	color: var(--color-text-secondary);
+}
+
+/* Section otsikot */
+
+.section-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.6rem;
+	padding: 0 0.125rem;
+}
+
+.section-title {
+	font-size: 0.875rem;
+	font-weight: 700;
+	color: var(--color-text-main);
+}
+
+.section-title-wrap {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.section-notes {
+	font-size: 0.8rem;
+	color: var(--color-text-muted);
+	font-weight: 450;
+}
+
+/* Erääntyvät palautukset */
+
+.deadline-card {
+	padding: 0.875rem 1rem;
+	border-left: 4px solid var(--color-amber);
+	margin-bottom: 0.625rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.375rem;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--color-text-main);
+}
+
+.amber-dot {
+	width: 0.375rem;
+	height: 0.375rem;
+	background-color: var(--color-amber);
+	border-radius: var(--radius-full);
+	animation: pulseDot 1.8s infinite;
+}
+
+@keyframes pulseDot {
+	0%,
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.4);
+		opacity: 0.5;
+	}
+}
+
+/* Päivän ohjelma */
+
+.event-card {
+	padding: 0.875rem 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	text-decoration: none;
+	border-left: 4px solid var(--color-primary);
+	margin-bottom: 0.625rem;
+	cursor: pointer;
+}
+
+.blue-dot {
+	width: 0.375rem;
+	height: 0.375rem;
+	background-color: var(--color-primary);
+	border-radius: var(--radius-full);
+	animation: pulseDot 1.8s infinite;
+}
+
+/* Viikkonäkymä */
+
+.week-section-header {
+	margin: 0;
+}
+
+.week-section-title {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: var(--color-text-main);
+}
+
+.week-section-date {
+	font-size: 1rem;
+	font-weight: 425;
+	color: var(--color-text-main);
+}
+
+.empty-card {
+	padding: 1.125rem;
+	border-radius: var(--radius-md);
+	border: var(--border-card);
+	background-color: var(--color-surface-white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	color: var(--color-text-muted);
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+/* Kurssikortti */
+
+.course-card {
+	padding: 1rem 1.125rem;
+	border-left: 4px solid var(--color-primary);
+	margin-bottom: 0.875rem;
+}
+
+.course-code {
+	font-size: 0.75rem;
+	font-weight: 700;
+	color: var(--color-primary);
+	letter-spacing: 0.05em;
+}
+
+.course-title {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: var(--color-text-main);
+}
+
+.course-badge-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	margin-bottom: 0.75rem;
+}
+
+.badge-pill {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.2rem 0.5rem;
+	border-radius: var(--radius-md);
+	background-color: var(--color-surface-low);
+	font-size: 0.75rem;
+	color: var(--color-text-main);
+}
+
+.course-info-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	padding-top: 0.5rem;
+	border-top: 1px solid var(--color-surface-container);
+	font-size: 0.75rem;
+}
+
+.course-info-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.course-info-key {
+	color: var(--color-text-muted);
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+	font-weight: 450;
+}
+
+.course-info-item {
+	font-weight: 600;
+	color: var(--color-text-main);
+	text-align: right;
+	max-width: 40%;
+}
